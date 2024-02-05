@@ -14796,7 +14796,7 @@ __metadata:
     prettier: ^2.0.5
     react: 18.2.0
     react-native: 0.73.2
-    react-native-builder-bob: ^0.20.0
+    react-native-builder-bob: ^0.20.4
     react-native-svg: ^14.1.0
     release-it: ^15.0.0
     typescript: ^5.0.2
@@ -14806,7 +14806,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-native-builder-bob@npm:^0.20.0":
+"react-native-builder-bob@npm:^0.20.4":
   version: 0.20.4
   resolution: "react-native-builder-bob@npm:0.20.4"
   dependencies:
