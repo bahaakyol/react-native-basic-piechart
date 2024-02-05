@@ -52,7 +52,7 @@ export default YourComponent;
 ```JS
 import React from 'react';
 import { View } from 'react-native';
-import PieChart from 'your-piechart-library';
+import PieChart from 'react-native-basic-piechart';
 
 const ExampleComponent = () => {
   const dataValues = [25, 50, 75, 100];
