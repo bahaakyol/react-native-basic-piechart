@@ -74,5 +74,8 @@ const ExampleComponent = () => {
 export default ExampleComponent;
 
 ```
+![4](https://github.com/bahaakyol/react-native-basic-piechart/assets/81897405/d0353c5b-53fd-4a2e-aeaa-dff84f45dde9)
+![5](https://github.com/bahaakyol/react-native-basic-piechart/assets/81897405/434a3c0d-6b54-4eca-bac8-2f45f5b69fb5)
+![6](https://github.com/bahaakyol/react-native-basic-piechart/assets/81897405/4ecabd63-9d99-43eb-822f-8c6695294afe)
 
 
