@@ -1,6 +1,7 @@
 # React Native PieChart Component
 
 A customizable and responsive PieChart component for React Native using `react-native-svg`.
+The package `react-native-svg`should be installed in your project.
 
 ## Installation
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-export interface IPieChart {
+export interface IYKSPieChart {
   dataValues: Array<number>;
   colors?: Array<string>;
   radiusProp?: number;
@@ -10,7 +10,7 @@ export interface IPieChart {
   gapColor?: string;
 }
 
-const PieChart: React.FC<IPieChart> = ({
+const CustomPieChart: React.FC<IYKSPieChart> = ({
   dataValues,
   colors,
   radiusProp,
@@ -26,13 +26,16 @@ const PieChart: React.FC<IPieChart> = ({
     newData.push(Math.abs(item));
   });
   const containerStyle = {
-    backgroundColor: gapColor ?? noGap ? 'transparent' : '#fff',
-    borderRadius: '100%',
-    padding: 1,
+    borderRadius: 9999,
   };
 
   return (
-    <View style={containerStyle as Object}>
+    <View
+      style={[
+        containerStyle,
+        { backgroundColor: gapColor ?? 'transparent', padding: noGap ? 0 : 1 },
+      ]}
+    >
       <Svg height={radius * 2} width={radius * 2}>
         {newData.map((value: number, index: number) => {
           const percentage = (value / total) * 360;
@@ -70,4 +73,4 @@ const PieChart: React.FC<IPieChart> = ({
   );
 };
 
-export default React.memo(PieChart);
+export default React.memo(CustomPieChart);
